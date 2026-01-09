@@ -102,6 +102,21 @@ exports.executeSqlString = (sql, callback) => {
 };
 
 /**
+ * Executes a sql string on the AS400 with options.
+ * @param sql
+ * @param callback - The finished callback function when all rows have been processed.
+ */
+exports.executeSqlStringWithOptions = ({ sql, fetchSize }, callback) => {
+  // check the prevent queries flag.
+  if (preventQueries) {
+    return callback(new Error('Prevent queries flag is on. Maintenance is being performed.'));
+  }
+
+  // execute the query.
+  jdbc.query(sql, [], fetchSize, callback);
+};
+
+/**
  * Executes a sql string on the AS400.
  * @param sql
  * @param parameters

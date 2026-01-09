@@ -1,6 +1,6 @@
 {
   "name": "dh-400jdbc2",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "dependencies": {
     "java": "^0.12.1",
     "lodash": "^4.17.20"
