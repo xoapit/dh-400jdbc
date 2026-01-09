@@ -1,10 +1,6 @@
 {
-  "name": "dh-400jdbc",
-  "version": "2.1.5",
-  "author": {
-    "name": "Michael Uranaka",
-    "email": "uranakam@gmail.com"
-  },
+  "name": "dh-400jdbc2",
+  "version": "2.1.8",
   "dependencies": {
     "java": "^0.12.1",
     "lodash": "^4.17.20"
@@ -13,7 +9,7 @@
   "description": "JDBC Wrapper for as400 Databases",
   "repository": {
     "type": "git",
-    "url": "git://github.com/uranakam/dh-400jdbc.git"
+    "url": "git://github.com/xoapit/dh-400jdbc.git"
   },
   "engines": {
     "node": ">= 12.0"

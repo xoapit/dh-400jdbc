@@ -64,6 +64,17 @@ exports.initialize = (options, callback) => {
 };
 
 /**
+ * Connects to the database.
+ */
+exports.connect = (callback) => {
+  if(!jdbc) {
+    return callback(new Error('JDBC driver is not initialized.'));
+  }
+
+  jdbc.connect(callback);
+};
+
+/**
  * Closes all connections in the pool.
  * @param callback - The finished callback function.
  */
